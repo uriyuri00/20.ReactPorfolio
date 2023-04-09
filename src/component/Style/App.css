@@ -1,0 +1,11 @@
+a {
+  /* Fake link hand */
+  cursor: pointer;
+}
+
+#site-main {
+  border-top: 1px solid black;
+}
+#site-header {
+  height: 6ch;
+}
