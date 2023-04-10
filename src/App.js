@@ -3,24 +3,22 @@ import React, { useState } from "react";
 import { AboutMe } from "./component/AboutMe";
 import { Contact } from "./component/Contact";
 import { Footer } from "./component/Footer";
-import { Header } from "./component/Header";
+import { Home } from "./component/Home";
 import { Navigation } from "./component/Navigation";
 import { Project } from "./component/Project";
 import { Resume } from "./component/Resume";
 import { Skills } from "./component/Skills";
-import "./component/Style/App.css";
 
 const App = () => {
-  let [pageName, setPageName] = useState("AboutMe");
+  let [pageName, setPageName] = useState("Home");
 
   return (
     <div className="App">
       <Navigation setPageName={setPageName} />
       <header className="header" id="site-header">
-        <Header />
       </header>
       <main id="site-main">
-        
+        {pageName==="Home"?<Home/>:""}
         {pageName==="AboutMe"?<AboutMe/>:""}
         {pageName==="Skills"?<Skills/>:""}
         {pageName==="Project"?<Project/>:""}
@@ -30,7 +28,6 @@ const App = () => {
       </main>
       <footer>
         <Footer />
-        <Contact />
       </footer>
     </div>
   );

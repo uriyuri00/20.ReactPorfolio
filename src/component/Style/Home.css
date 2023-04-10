@@ -1,0 +1,20 @@
+.home{
+    background-color: rgb(48, 139, 209);
+}
+
+.home img {
+    width: 100vw;
+    margin: 0 auto;
+    display: block;
+}
+
+#hero {
+  position: relative;
+}
+#heroTitle{
+  position: absolute;
+  top: 50%;
+  left: 50%;/*컨데이너 반*/
+  transform: translateX(-50%); /*글씨 반*/ 
+  font-size: 300%;
+}
