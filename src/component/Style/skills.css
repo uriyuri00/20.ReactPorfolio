@@ -1,0 +1,14 @@
+.skills{
+    text-align: center;
+    background-color: azure;
+}
+.box{
+    display: block;
+}
+.img {
+    text-align: center;
+    display: inline-block;
+    width: 300px;
+    height: 206px;
+    border-radius: 10px;
+}

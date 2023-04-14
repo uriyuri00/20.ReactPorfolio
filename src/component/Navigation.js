@@ -10,7 +10,7 @@ export const Navigation = (props) => {
   
   // This way is called Conditional Rendering using useState and Props
   return (
-    <div>
+    <div id='nav'>
     <h1 id='header-title'> Yuri's Portfolio</h1>
     <nav id="navigation">
       <ul>

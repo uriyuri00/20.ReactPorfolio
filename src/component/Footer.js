@@ -7,9 +7,9 @@ export const Footer = () => {
       <h3>Contact</h3>
       <br/>
       <ul>
-        <li><a href='uriyuri00@gmail.com'></a>email</li>
-        <li><a href='https://www.linkedin.com/in/yuri-kwon-65443526a/'></a>linkedin</li>
-        <li><a href='https://github.com/uriyuri00'></a>GitHub</li>
+        <li><a href='uriyuri00@gmail.com'>email</a></li>
+        <li><a href='https://www.linkedin.com/in/yuri-kwon-65443526a/'>linkedin</a></li>
+        <li><a href='https://github.com/uriyuri00'>GitHub</a></li>
 
       </ul>
     </footer>

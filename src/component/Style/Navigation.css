@@ -1,6 +1,15 @@
+
+#nav {
+   box-sizing: border-box;
+   padding: 20px;
+
+}
 #navigation {
   float: right;
+  /* display: inline-block;
+  justify-content: right; */
   z-index: 999;
+  
 }
 #navigation ul {
   list-style: none;
@@ -10,7 +19,7 @@
 }
 #navigation ul li {
   display: inline-block;
-  margin-right: 7px;
+  margin-right: 10px;
 }
 
 #header-title{

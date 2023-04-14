@@ -8,8 +8,7 @@
 
 
 import React, {useState} from 'react'
-import  Form from 'react-bootstrap/Form'
-import Button from 'react-bootstrap/Button';
+
 
 import { validateEmail } from '../utils/helper';
 
@@ -46,7 +45,7 @@ export const Contact = () =>{
   
   return (
  
-  <Form >
+  <form >
      <div>
     <nav id='contactme'>
       <h2> Contact ME</h2>
@@ -54,26 +53,43 @@ export const Contact = () =>{
     </nav>
     <p>If any interest in my works, contact ME!!</p>
   </div>
-      <Form.Group className="mb-3" onChange={handleInputChange}>
-        <Form.Label>UserName</Form.Label>
-        <Form.Control type="username" placeholder="name@example.com" />
-      </Form.Group>
-      <Form.Group className="mb-3">
-        <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="name@example.com" />
-      </Form.Group>
-      <Form.Group className="mb-3">
-        <Form.Label>Message</Form.Label>
-        <Form.Control as="textarea" rows={3} />
-      </Form.Group>
+      <div className='form-group'>
+        <label>username</label>
+        <input
+          name='username'
+          type='text'
+          className='form-control'
+          placeholder='username'
+          >
+        </input>
+        <label>Email</label>
+        <input
+          name='email'
+          type='email'
+          className='form-control'
+          placeholder='abc@aol.com'
+          validateEmail
+          >
+        </input>
+        <label>Message</label>
+        <input
+          name='message'
+          type='text'
+          className='form-control'
+          placeholder='feel free '
+          >
+        </input>
 
-    <Button variant="outline-secondary"
+      </div>
+
+    <button 
+      className='btn outline-secondary'
       content='Confirm'
-      label='Label with htmlFor'
-      onChange={handleFormSubmit}>submit
+      type='submit'
+      onClick={handleFormSubmit}>submit
 
-      </Button>
-  </Form>
+      </button>
+  </form>
 )
   }
 export default Contact
