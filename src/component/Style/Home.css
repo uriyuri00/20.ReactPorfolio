@@ -1,20 +1,49 @@
 .home{
+  position: relative;
+  background: url(../image/main-background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
     background-color: rgb(48, 139, 209);
 }
 
-/* .App img {
-    width: 100vw;
-    margin: 0 auto;
-    display: block;
-} */
 
-#hero {
-  position: relative;
+.main-info {
+  display: flex;
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-#heroTitle{
+
+.main-info h1{
+  color: rgb(42, 42, 186);
+  text-transform: uppercase;
+}
+
+/* #heroTitle{
   position: absolute;
   top: 50%;
-  left: 50%;/*컨데이너 반*/
-  transform: translateX(-50%); /*글씨 반*/ 
+  left: 50%;/*컨데이너 반
+  transform: translateX(-50%); 글씨 반 
   font-size: 300%;
+} */
+
+.typed-text {
+  font-size: 2rem;
+  color: rgb(42, 42, 186);
+
+}
+
+.btn-main-offer {
+  border: 3px solid rgb(192, 81, 21);
+  text-transform: uppercase;
+  border-radius: 10;
+  padding:  0.7rem 0.8rem 0.8rem 0.8rem  ;
+  margin: 2rem;
 }

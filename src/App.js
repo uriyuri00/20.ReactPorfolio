@@ -9,6 +9,7 @@ import { Project } from "./component/Project";
 import { Resume } from "./component/Resume";
 import { Skills } from "./component/Skills";
 import mainBG from './component/image/main-background.jpg'
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {
   let [pageName, setPageName] = useState("Home");
@@ -25,7 +26,7 @@ const App = () => {
         {pageName==="Project"?<Project/>:""}
         {pageName==="Resume"?<Resume/>:""}
         {pageName==="Contact"?<Contact/>:""}
-        <img src={ mainBG} />
+        {/* <img src={ mainBG} /> */}
 
       </main>
       <footer>
